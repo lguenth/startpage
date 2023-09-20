@@ -13,7 +13,7 @@ main {
     min-height: 100vh;
 }
 
-#traichu {
+#icon {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -83,71 +83,8 @@ aside svg {
     height: 4.5rem;
 }
 
-#dock ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-    column-gap: var(--spacing-m);
-    row-gap: var(--spacing-m);
-    padding: 0;
-}
 
-#dock a {
-    display: block;
-    fill: var(--primary-link-color);
-    transition: fill 0.125s ease-in-out;
-}
-
-#dock a:focus,
-#dock a:hover {
-    animation: slime 0.75s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    fill: var(--primary-link-hover-color);
-    outline: none;
-}
-
-#dock li:nth-child(1) a:focus,
-#dock li:nth-child(1) a:hover {
-    fill: hsl(5, 81%, 56%);
-}
-
-/* Gmail */
-#dock li:nth-child(2) a:focus,
-#dock li:nth-child(2) a:hover {
-    fill: hsl(217, 89%, 61%);
-}
-
-/* Google Calendar */
-#dock li:nth-child(3) a:focus,
-#dock li:nth-child(3) a:hover {
-    fill: hsl(44, 100%, 50%);
-}
-
-/* Google Keep */
-#dock li:nth-child(4) a:focus,
-#dock li:nth-child(4) a:hover {
-    fill: var(--primary-link-hover-color);
-}
-
-/* Notion */
-#dock li:nth-child(5) a:focus,
-#dock li:nth-child(5) a:hover {
-    fill: hsl(102, 53%, 52%);
-}
-
-/* Github */
-#dock li:nth-child(6) a:focus,
-#dock li:nth-child(6) a:hover {
-    fill: hsl(14, 89%, 53%);
-}
-
-/* Figma */
-
-#dock svg {
-    height: 1.5rem;
-}
-
+/*
 #search {
     display: flex;
     justify-content: center;
@@ -171,26 +108,15 @@ aside svg {
     padding: var(--spacing-m);
     width: 100%;
 }
-
-/* input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active,
-&:-webkit-autofill::first-line {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--primary-font-color);
-    -webkit-box-shadow: 0 0 0px 1000px var(--primary-background-color) inset;
-    transition: background-color 5000s ease-in-out 0s;
-    font-family: var(--font-sans-serif);
-    font-size: var(--font-size-body);
-    line-height: 1.5;
-} */
+*/
 
 @media (prefers-color-scheme: dark) {
+    /*
     #search input {
         background-image: var(--svg-search-gray);
         border: 0.125rem solid hsl(var(--color-white-hsl) / 0.25);
     }
+    */
 
     #search input:hover {
         border-color: hsl(var(--color-white-hsl) / 0.5);
@@ -207,6 +133,7 @@ input:-webkit-autofill:active,
         filter: drop-shadow(0 0 0 hsl(var(--color-black-hsl) / 0.75));
     }
 
+    /*
     #search input {
         background-image: var(--svg-search-light-gray);
         border: 0.125rem solid hsl(var(--color-black-hsl) / 0.25);
@@ -215,6 +142,7 @@ input:-webkit-autofill:active,
     #search input:hover {
         border-color: hsl(var(--color-black-hsl) / 0.5);
     }
+    */
 
     #bookmarks a:focus,
     #bookmarks a:hover {
@@ -222,17 +150,20 @@ input:-webkit-autofill:active,
     }
 }
 
+/*
 #search input:focus {
     background-color: hsl(var(--color-white-hsl) / 0.025);
     border-color: var(--color-orange);
     outline-color: hsl(var(--color-orange-hsl) / 0.25);
 }
+*/
 
 #bookmarks {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
 #bookmarks ul {
@@ -291,7 +222,7 @@ input:-webkit-autofill:active,
         display: flex;
     }
 
-    #traichu {
+    #icon {
         padding: 0;
         width: 45rem;
         /* 720px */
@@ -300,12 +231,6 @@ input:-webkit-autofill:active,
     aside img,
     aside svg {
         height: 7.5rem;
-    }
-
-    #dock ul {
-        column-gap: 0;
-        justify-content: space-around;
-        padding: 0;
     }
 
     #bookmarks {

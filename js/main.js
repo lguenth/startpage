@@ -8,7 +8,3 @@ function dateTime() {
 	document.getElementById('date-time').innerHTML = '<p id="date">' + dayToday + ', ' + dateToday + '</p><p id="time">' + time + '</p>';
 	setTimeout(dateTime, 1000);
 }
-
-function load() {
-	dateTime();
-}

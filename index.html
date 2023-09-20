@@ -1,13 +1,5 @@
-<!--     __             _      __         
-        / /__________ _(_)____/ /_  __  __
-       / __/ ___/ __ `/ / ___/ __ \/ / / /
-      / /_/ /  / /_/ / / /__/ / / / /_/ / 
- _____\__/_/   \__,_/_/\___/_/ /_/\__,_/  
-/_____/ https://github.com/tressley/_traichu
--->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,16 +10,15 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Home</title>
 </head>
-
-<body onload="load()">
+<body onload="dateTime()">
   <main>
     <header>
       <section id="date-time">
         <h2 class="sr-only">Date & Time</h2>
       </section>
     </header>
-    <section id="traichu">
-      <h1 class="sr-only">traichu icon</h1>
+    <section id="icon">
+      <h1 class="sr-only">page icon</h1>
       <aside>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22" shape-rendering="crispEdges">
           <path
@@ -48,6 +39,7 @@
             d="M5,3h-1v-1h1v1Zm-1,2V3h-1v3h1v-1Zm-1,1h-1v1h1v-1Zm-1,1H1v1h1v-1Zm0,3v-1H1v-1H0v3H1v-1h1Zm-1,1v1h1v-1H1Zm2,1h-1v1h1v-1Zm-2,1v1h1v-1H1Zm2,1h-1v1h2v-1h-1Zm4,4h-1v-1h-1v-2h-1v2h-1v2h5v-1h-1Zm4,3v-2h-3v1h1v1h1v1h3v-1h-2Zm2-2h-1v1h1v1h1v-3h-1v1Zm4-3v-1h-2v-3h-1v-2h-1v-3h-1v1h-1v1h1v2h1v3h1v4h1v-2h1v1h3v-1h-2Zm2-3h-2v1h1v1h1v1h1v-2h-1v-1Zm-1-1h1v-1h-1v-1h2v-1h-3v1h-1v3h1v-1h1Zm3-4V4h-1v5h1v-1Zm1-5v-1h-1v2h1v-1Zm0,3v1h1v-3h-1v2Zm1,1v3h-2v3h1v-2h2V7h-1Zm-3,7h1v-1h-1v1Zm0-1v-1h-1v1h1Zm-5-6v1h1v-3h-1v1h-2v1h2Zm0-4v1h1v-1h1v-1h-4v1h2Zm-2,1v-1h-2v1h2Zm-2,0h-1v1h1v-1Zm-6,1v1h3v1h1v-1h1v-1H6v-1h-1v1Zm1,6h-1v1h2v-2h-1v1Zm4,4h-1v2h1v-2Zm0,3h1v-1h-1v1Zm1-1h1v-1h-1v1Zm1-2v1h1v-2h-1v1ZM6,3v1h1V2h1V0h-1V1h-2v1h1v1Z" />
         </svg>
       </aside>
+      <!--
       <section id="search">
         <h2 class="sr-only">Search</h2>
         <form action="https://www.qwant.com/" method="get">
@@ -57,6 +49,7 @@
           <button class="sr-only" tabindex="-1">Search</button>
         </form>
       </section>
+      -->
       <section id="bookmarks">
         <h2 class="sr-only">Bookmarks</h2>
         <ul>
@@ -69,9 +62,7 @@
           </li>
           <li>
             <a href="https://github.com"><img src="https://icons.duckduckgo.com/ip3/github.com.ico" class="favicon" alt="Github favicon">GitHub</a>
-          </li>
-          
-          
+          </li>   
         </ul>
         <ul>
           <li>
@@ -106,5 +97,4 @@
     </section>
   </main>
 </body>
-
 </html>
